@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
+import Slider from './Components/Slider/Slider';
 import Questionaire from './Containers/QuestionaireContainer';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <div className='overlay2'></div>
       <div className='content'>
         <h1>BrainLog</h1>
+        <Slider/>
         <Questionaire/>
       </div>
     </div>
