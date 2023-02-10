@@ -1,4 +1,8 @@
-function Thoughts() {
+function Thoughts({updateThoughts}) {
+    const handleChange = (value) => {
+        updateThoughts(value);
+    };
+
     return (
         <div className='thoughts'>
             <p className='prompt'>Write down any thoughts you may have</p>
@@ -7,7 +11,8 @@ function Thoughts() {
                 name='thoughts' 
                 cols='50' 
                 rows='5' 
-                maxlength='300'></textarea><br/>
+                maxlength='300'
+                onChange={e => handleChange(e.target.value)}></textarea><br/>
         </div>
     );
 }

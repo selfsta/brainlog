@@ -1,7 +1,7 @@
 import faces from './faces.png';
 
 
-function CSSSlider({wellness, updateWellness}) {
+function CSSSlider({updateWellness}) {
     const handleChange = (value) => {
         updateWellness(value);
     }
